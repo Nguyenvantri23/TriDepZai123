@@ -5,15 +5,15 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "TriDepZai Hub",
-    SubTitle = "Khong co gi ca",
+    SubTitle = "Nhin Cai Deo gi",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
-    Theme = "Darker",
+    Theme = "lighter",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    Gerenal = Window:AddTab({ Title = "Gerenal", Icon = "" }),
     Setting = Window:AddTab({ Title = "Setting", Icon = "" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "" }),
     Player = Window:AddTab({ Title = "Player", Icon = "" }),
@@ -2497,7 +2497,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=16024431693"
+ImageButton.Image = "http://www.roblox.com/asset/?id=72602213254111"
 ImageButton.MouseButton1Down:connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)
 end)
@@ -2531,7 +2531,7 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
 	elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
 		_G.Fast_Delay = 0.2
 	elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
-		_G.Fast_Delay = 0.03
+		_G.Fast_Delay = 0
 	end
 end)
 
@@ -2863,7 +2863,7 @@ function TPchest(P1)
 if Third_Sea then
 local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {
     Title = "Auto Chest Stop If Has Items [Tp]",
-    Description = "Nhặt Rương dừng Khi Có Vật Phẩm [Tp]", 
+    Description = "Nhặt Rương dừng Khi Có Key hoặc Cup[Tp]", 
     Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea3 = Value
@@ -7246,7 +7246,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
             Hop()
             Fluent:Notify({
-                Title = "Fai Fao Hub",
+                Title = "TriDepZai Hub",
                 Content = "Turn Off Find Full Moon...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -7254,7 +7254,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
             Hop()
             Fluent:Notify({
-                Title = "Fai Fao Hub",
+                Title = "TriDepZai Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -7262,7 +7262,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
             Hop()
             Fluent:Notify({
-                Title = "Fai Fao Hub",
+                Title = "TriDepZai Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -7300,7 +7300,7 @@ InterfaceManager:SetFolder("FaiFaoScriptHub")
 SaveManager:SetFolder("FaiFaoScriptHub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
-    Title = "Fai Fao Hub",
+    Title = "TriDepZai Hub",
     Content = "The script has been loaded.",
     Duration = 8
 })
